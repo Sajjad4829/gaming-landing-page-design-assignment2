@@ -85,13 +85,34 @@
     }
     
     .right-content {
-        height: 400px;
+        height: 500px;
         width: 500px;
     }
     
     .right-content img {
         height: 100%;
         width: 100%;
+    }
+    /* game-section */
+    
+    .section {
+        display: flex;
+        justify-content: center;
+        padding: 100px;
+    }
+    
+    .game-section {
+        max-width: 1000px;
+        display: grid;
+        grid-template-columns: repeat(4, 250px);
+    }
+    
+    .game-card {
+        height: 250px;
+    }
+    
+    .game-card img {
+        height: 100%;
     }
     
     @media screen and (max-width: 576px) {
@@ -115,5 +136,12 @@
         .right-content {
             height: 300px;
             width: 350px;
+        }
+        .game-section {
+            grid-template-columns: repeat(1, 250px);
+            grid-row-gap: 15px;
+        }
+        .game-card {
+            height: 280px;
         }
     }
