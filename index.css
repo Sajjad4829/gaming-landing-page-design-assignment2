@@ -59,11 +59,21 @@
     }
     /* header-section css start*/
     
-    .goat {
+    .goat,
+    .dot {
         background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        font-size: 4rem;
+        font-weight: 800;
+    }
+    
+    .content-head {
+        color: #0B0223;
+        font-size: 3rem;
+        font-weight: 600;
+        text-transform: uppercase;
     }
     
     .header-section {
@@ -71,6 +81,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        gap: 50px;
     }
     
     .left-content {
@@ -93,6 +104,23 @@
         height: 100%;
         width: 100%;
     }
+    
+    .btn {
+        margin-top: 20px;
+        background: #FF42A5;
+        padding: 15px 30px;
+        outline: none;
+        border: none;
+        font-size: 1.2rem;
+        color: rgba(255, 255, 255, 1);
+        border-radius: 18px;
+        cursor: pointer;
+    }
+    
+    .btn-2 {
+        background: rgba(78, 197, 247, 1);
+        margin-left: 10px;
+    }
     /* game-section */
     
     .section {
@@ -113,6 +141,27 @@
     
     .game-card img {
         height: 100%;
+    }
+    
+    .image-overlay {
+        position: relative;
+    }
+    
+    .image-overlay::after {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 250px;
+        width: 212px;
+        background-color: rgba(9, 9, 9, 0.715);
+        border-radius: 10px;
+    }
+    
+    .content-event h3 {
+        margin-top: 10px;
+        color: #534C64;
+        font-weight: 500;
     }
     
     @media screen and (max-width: 576px) {
@@ -143,5 +192,26 @@
         }
         .game-card {
             height: 280px;
+        }
+        .image-overlay::after {
+            height: 280px;
+            width: 240px;
+        }
+        .left-content {
+            background-image: url('images/Group 14.png');
+            width: 100%;
+            background-size: cover;
+            padding-bottom: 30px;
+            background-repeat: no-repeat;
+        }
+        .content-head,
+        .goat,
+        .dot {
+            font-size: 2rem;
+            text-align: center;
+        }
+        .content-event h3 {
+            text-align: center;
+            font-size: 1rem;
         }
     }
