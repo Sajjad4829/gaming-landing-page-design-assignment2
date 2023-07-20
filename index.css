@@ -345,6 +345,7 @@ li>a {
     .nav-container,
     .nav {
         flex-direction: column;
+        width: 100%;
     }
     .nav-container {
         padding-bottom: 90px;
@@ -415,11 +416,11 @@ li>a {
     }
     /* game-name-section-moble-responsive*/
     .game-name-section {
-        width: 450px;
+        width: 100%;
         grid-template-columns: repeat(3, 100px);
         grid-gap: 25px;
         height: 300px;
-        padding: 0px;
+        padding: 20px 0px;
         place-content: center;
     }
     .game {
@@ -434,7 +435,7 @@ li>a {
     }
     /* footer-section-moble-responsive*/
     .footer-section {
-        width: 450px;
+        width: 100%;
         height: auto;
         padding: 20px 0px;
     }
