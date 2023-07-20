@@ -175,7 +175,7 @@
         display: block;
         position: absolute;
         top: 100px;
-        left: 80px;
+        left: 70px;
         width: 70px;
     }
     
@@ -199,7 +199,7 @@
         left: 0px;
         height: 250px;
         width: 212px;
-        background-color: rgba(9, 9, 9, 0.382);
+        background-color: rgba(9, 9, 9, 0.323);
         border-radius: 10px;
     }
     
@@ -213,7 +213,7 @@
     
     .annivarsary-content h3 {
         text-align: right;
-        font-size: 48px;
+        font-size: 3rem;
         font-weight: 800;
     }
     
@@ -256,9 +256,11 @@
         flex-wrap: wrap;
         justify-content: center;
         padding: 100px 0px;
-        background: #ffe6f24f;
+        background: #ffe6f29c;
         margin: auto;
         gap: 30px;
+        border-radius: 10px;
+        margin-bottom: 20px;
     }
     
     .game {
@@ -274,10 +276,11 @@
         padding: 5px;
         gap: 7px;
         font-weight: 800;
-        transition: all 0.5s ease-in-out;
+        border: 1px solid white;
     }
     
     .game:hover {
+        transition: all 1s ease-in-out;
         border: 1px solid #FF42A5;
     }
     
@@ -462,5 +465,39 @@
         .game-section {
             grid-template-columns: repeat(2, 250px);
             grid-row-gap: 50px;
+        }
+        /* annivarsary-section-tablet-responsive */
+        .annivarsary-image-content {
+            height: 380px;
+            width: 50%;
+        }
+        .small-image {
+            height: 120px;
+            width: 100px;
+        }
+        .annivarsary-content h3 {
+            font-size: 2rem;
+        }
+        .annivarsary-section {
+            gap: 30px;
+            padding-right: 40px;
+        }
+        .annivarsary-content p {
+            text-align: center;
+            font-size: 0.9rem;
+        }
+        /* game-name-section-tablet-responsiveness */
+        .game-name-section {
+            width: 550px;
+            grid-template-columns: repeat(3, 100px);
+            grid-gap: 25px;
+            height: 300px;
+            padding: 0px;
+            place-content: center;
+        }
+        .game {
+            height: 50px;
+            width: 130px;
+            font-size: 12px;
         }
     }
